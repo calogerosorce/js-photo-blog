@@ -48,8 +48,6 @@ header {
     img {
         position: absolute;
         width: 100%;
-
-
     }
 }
 
@@ -59,15 +57,13 @@ main {
         position: relative;
         top: 130px;
         z-index: 1;
-
-
     }
 
     #row {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        bottom: -150px;
+        bottom: -270px;
         margin: 0 100px;
     }
 
@@ -79,19 +75,30 @@ main {
     }
 
     .card {
-        width: 100%;
+        width: 80%;
         z-index: 2;
         background-color: white;
         margin: 20px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
 
         p {
-            text-align: center;
+            text-align: start;
             padding-bottom: 10px;
+            padding-left: 35px;
+            font-size: 20px;
         }
+
+
+        .viaggio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 30px;
+            padding-top: 25px;
+        }
+
 
     }
 
@@ -100,7 +107,7 @@ main {
     }
 
     .img_estate {
-        width: 60%;
+        width: 90%;
         padding-bottom: 15px;
     }
 
@@ -108,7 +115,7 @@ main {
         position: relative;
         width: 40px;
         z-index: 3;
-        left: 10px;
-        bottom: 15px;
+        left: 175px;
+        bottom: 185px;
     }
 }
