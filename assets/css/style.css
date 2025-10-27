@@ -34,10 +34,14 @@ rendi la pagina responsive, in modo che su mobile e tablet le foto si dispongano
 }
 
 header {
+    .text {
+        display: flex;
+        justify-content: center;
+    }
+
     h1 {
         position: absolute;
         top: 20px;
-        left: 700px;
         font-size: 70px;
     }
 
@@ -50,29 +54,39 @@ header {
 }
 
 main {
+    .container {}
+
     .img_back {
         width: 100%;
         position: relative;
         top: 130px;
+        z-index: 1;
+
 
     }
 
     .row {
         display: flex;
         flex-wrap: wrap;
+        position: absolute;
+        bottom: -150px;
+        margin: 0 100px;
     }
 
     .col {
         width: calc(100% / 3);
+        display: flex;
 
     }
 
     .card {
-        width: 60%;
-        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        z-index: 2;
         background-color: white;
-        top: 200px;
-        margin-left: 40px;
+        margin: 10px;
 
         p {
             padding: 5px;
@@ -81,14 +95,16 @@ main {
     }
 
     .img_estate {
-        width: 30%;
-        padding: 15px;
+        width: 65%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .pin {
-        width: 50px;
-        position: absolute;
-        left: 125px;
-        top: -20px;
+        position: relative;
+        width: 40px;
+        z-index: 3;
+        left: 190px;
+        bottom: 175px;
     }
 }
