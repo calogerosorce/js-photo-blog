@@ -63,45 +63,49 @@ main {
 
     }
 
-    .row {
+    #row {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        bottom: -300px;
+        bottom: -150px;
         margin: 0 100px;
     }
 
     .col {
-        width: calc(100% / 3);
+        width: calc((100% / 3) - 40px);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     .card {
-        width: 450px;
+        width: 100%;
         z-index: 2;
         background-color: white;
         margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         p {
             text-align: center;
+            padding-bottom: 10px;
         }
 
     }
 
     .img_estate {
-        width: 85%;
-        padding-top: 15px;
+        width: 60%;
         padding-bottom: 15px;
-        margin-left: -10px;
+        margin-left: 0px;
     }
 
     .pin {
         position: relative;
         width: 40px;
         z-index: 3;
-        left: 215px;
-        bottom: 390px;
+        left: 10px;
+        bottom: 15px;
     }
 }
