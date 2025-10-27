@@ -13,11 +13,11 @@ axios.get(api)
           <div class="card">
             <div class="viaggio"> 
               <img class="pin" src="./assets/img/pin.svg" alt="">
-              <img class="img_estate" src="${url}" alt="${title || ''}">
+              <img class="img_estate" src="${url}" alt="${title}">
             </div>
             <div class="paragraph"> 
-              <p class="gray">${date || ''}</p>
-              <p><strong>${title || ''}</strong></p>
+              <p class="gray">${date}</p>
+              <p class="title"><strong>${title}</strong></p>
             </div>
           </div>
         </div>
