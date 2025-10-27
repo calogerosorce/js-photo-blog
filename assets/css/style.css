@@ -50,10 +50,45 @@ header {
 }
 
 main {
-    img {
+    .img_back {
         width: 100%;
         position: relative;
         top: 130px;
 
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: calc(100% / 3);
+
+    }
+
+    .card {
+        width: 60%;
+        position: absolute;
+        background-color: white;
+        top: 200px;
+        margin-left: 40px;
+
+        p {
+            padding: 5px;
+        }
+
+    }
+
+    .img_estate {
+        width: 30%;
+        padding: 15px;
+    }
+
+    .pin {
+        width: 50px;
+        position: absolute;
+        left: 125px;
+        top: -20px;
     }
 }
