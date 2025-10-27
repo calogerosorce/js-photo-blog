@@ -79,16 +79,13 @@ main {
     }
 
     .card {
-        width: 100%;
+        width: 450px;
         z-index: 2;
         background-color: white;
         margin: 20px;
-        display: flex;
-        justify-content: center;
-        padding: -100px 0;
 
         p {
-            padding: 5px;
+            text-align: center;
         }
 
     }
@@ -97,14 +94,14 @@ main {
         width: 85%;
         padding-top: 15px;
         padding-bottom: 15px;
-        margin-left: -25px;
+        margin-left: -10px;
     }
 
     .pin {
         position: relative;
         width: 40px;
         z-index: 3;
-        left: 195px;
-        bottom: 215px;
+        left: 215px;
+        bottom: 390px;
     }
 }
