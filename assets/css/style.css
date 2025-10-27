@@ -95,6 +95,10 @@ main {
 
     }
 
+    .gray {
+        color: gray;
+    }
+
     .img_estate {
         width: 60%;
         padding-bottom: 15px;
