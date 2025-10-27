@@ -54,8 +54,6 @@ header {
 }
 
 main {
-    .container {}
-
     .img_back {
         width: 100%;
         position: relative;
@@ -69,24 +67,25 @@ main {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
-        bottom: -150px;
+        bottom: -300px;
         margin: 0 100px;
     }
 
     .col {
         width: calc(100% / 3);
         display: flex;
-
+        justify-content: center;
+        align-items: center;
     }
 
     .card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         z-index: 2;
         background-color: white;
-        margin: 10px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        padding: -100px 0;
 
         p {
             padding: 5px;
@@ -95,16 +94,17 @@ main {
     }
 
     .img_estate {
-        width: 65%;
+        width: 85%;
         padding-top: 15px;
         padding-bottom: 15px;
+        margin-left: -25px;
     }
 
     .pin {
         position: relative;
         width: 40px;
         z-index: 3;
-        left: 190px;
-        bottom: 175px;
+        left: 195px;
+        bottom: 215px;
     }
 }
