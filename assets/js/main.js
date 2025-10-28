@@ -50,5 +50,20 @@ axios.get(api)
                 <img class="img_estesa" src="${src}" alt="${alt}">
             `
       grid.classList.add('active')
+
+      function hideOverlay() {
+        const grid = document.getElementById('grid')
+        if (grid) {
+          grid.classList.remove('active')
+        }
+      }
+      const closeBtn = document.getElementById('close-btn')
+      closeBtn.addEventListener('click', hideOverlay)
+
+      grid.addEventListener('click', function (e) {
+        if (e.target === grid) hideOverlay()
+      }, { once: false })
+
     }
+
   })

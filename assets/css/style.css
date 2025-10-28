@@ -135,28 +135,6 @@ main {
 }
 
 
-@media screen and (max-width: 768px) {
-    main {
-        .img_back {
-            height: 1000px;
-        }
-
-        #row {
-            bottom: -250px;
-        }
-
-        .col {
-            width: calc((100% / 2) - 40px);
-        }
-
-
-        .pin {
-            left: 95px;
-            bottom: 100px;
-        }
-    }
-}
-
 #grid {
     position: fixed;
     inset: 0;
@@ -194,6 +172,30 @@ main {
     border-radius: 4px;
     font-weight: 600;
 }
+
+
+@media screen and (max-width: 768px) {
+    main {
+        .img_back {
+            height: 1000px;
+        }
+
+        #row {
+            bottom: -250px;
+        }
+
+        .col {
+            width: calc((100% / 2) - 40px);
+        }
+
+
+        .pin {
+            left: 95px;
+            bottom: 100px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 576px) {
     main {
