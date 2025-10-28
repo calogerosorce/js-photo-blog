@@ -78,6 +78,18 @@ main {
         align-items: center;
     }
 
+    #card:hover {
+        transform: rotate(30deg);
+
+        .pin {
+            display: none;
+        }
+
+        #img_estate {
+            padding-left: 25px;
+        }
+    }
+
     #card {
         width: 80%;
         z-index: 2;
@@ -85,6 +97,8 @@ main {
         margin: 20px;
         display: flex;
         flex-direction: column;
+        transition: transform 2s;
+
 
 
         p {
