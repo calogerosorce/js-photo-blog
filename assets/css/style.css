@@ -120,10 +120,12 @@ main {
     }
 
     #grid {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
         display: none;
+        z-index: 4;
     }
 
     #close-btn {
@@ -140,7 +142,6 @@ main {
     .img_estesa {
         width: 600px;
         height: 600px;
-        z-index: 4;
     }
 
     .pin {

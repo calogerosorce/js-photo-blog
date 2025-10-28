@@ -15,10 +15,10 @@ axios.get(api)
           <div id="card">
             <div class="viaggio"> 
               <img class="pin" src="./assets/img/pin.svg" alt="">
-              <img class="img_estate" src="${url}" alt="${title}">
+              <img class="img_estate" data-img="${id}" src="${url}" alt="${title}">
               <div id="grid">
                  <img class="img_estesa" data-img="${id}" src="${url}" alt="${title}">
-                    <button id="close-btn">Chiudi</button>
+                  <button id="close-btn">Chiudi</button>
               </div>
             </div>
             <div class="paragraph"> 
@@ -35,7 +35,6 @@ axios.get(api)
     cardEl.forEach(col => {
       col.addEventListener('click', function () {
         console.log('click');
-        document.getElementById('grid').style.display = 'flex'
       })
     })
 
