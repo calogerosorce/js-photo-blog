@@ -119,6 +119,30 @@ main {
         padding-bottom: 15px;
     }
 
+    #grid {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        display: none;
+    }
+
+    #close-btn {
+        position: absolute;
+        z-index: 5;
+        top: 10px;
+        right: 10px;
+        background: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .img_estesa {
+        width: 600px;
+        height: 600px;
+        z-index: 4;
+    }
+
     .pin {
         position: relative;
         width: 40px;
