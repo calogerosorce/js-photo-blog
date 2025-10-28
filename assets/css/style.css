@@ -80,6 +80,8 @@ main {
 
     #card:hover {
         transform: rotate(30deg);
+        width: 450px;
+        height: 450px;
 
         .pin {
             display: none;
@@ -97,7 +99,7 @@ main {
         margin: 20px;
         display: flex;
         flex-direction: column;
-        transition: transform 2s;
+        transition: transform 2s, width 2s, height 2s;
 
 
 
@@ -176,7 +178,7 @@ main {
 
 #close-btn {
     position: fixed;
-    top: 20px;
+    top: 40px;
     z-index: 10001;
     background: white;
     border: none;
