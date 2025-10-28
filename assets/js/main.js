@@ -3,13 +3,13 @@ const rowEl = document.getElementById('row')
 axios.get(api)
   .then(res => {
     const dat = res.data
-    console.log(dat);
 
     rowEl.innerHTML = dat.map(element => {
       const { url, date, title } = element
+
       return `
         <div class="col">
-          <div class="card">
+          <div id="card">
             <div class="viaggio"> 
               <img class="pin" src="./assets/img/pin.svg" alt="">
               <img class="img_estate" src="${url}" alt="${title}">
@@ -21,5 +21,16 @@ axios.get(api)
           </div>
         </div>
       `})
+    const nameClass = 'card'
+    const cardEl = document.querySelectorAll(`#${nameClass}`)
+    console.log(cardEl);
+    cardEl.forEach(col => {
+      col.addEventListener('click', function () {
+        console.log('click');
+      })
+    })
 
   })
+
+
+

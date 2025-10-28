@@ -76,7 +76,7 @@ main {
         align-items: center;
     }
 
-    .card {
+    #card {
         width: 80%;
         z-index: 2;
         background-color: white;
