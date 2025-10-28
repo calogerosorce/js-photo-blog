@@ -29,9 +29,10 @@ axios.get(api)
     const imgEl = document.querySelectorAll(`#${nameClass}`)
     console.log(imgEl);
     imgEl.forEach(col => {
-      col.addEventListener('click', function () {
+      col.addEventListener('click', () => {
         console.log('click');
         console.log(col);
+        showOverlay(col.src, col.alt)
       })
     })
 
@@ -40,8 +41,14 @@ axios.get(api)
       if (!grid) {
         grid = document.createElement('div')
         grid.id = 'grid'
+        console.log(grid);
         document.body.appendChild(grid)
       }
-    }
 
+      grid.innerHTML = `
+                <button id="close-btn" aria-label="Chiudi">Chiudi</button>
+                <img class="img_estesa" src="${src}" alt="${alt}">
+            `
+      grid.classList.add('active')
+    }
   })
