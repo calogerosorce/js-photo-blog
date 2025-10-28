@@ -27,11 +27,8 @@ axios.get(api)
 
     const nameClass = 'img_estate'
     const imgEl = document.querySelectorAll(`#${nameClass}`)
-    console.log(imgEl);
     imgEl.forEach(col => {
       col.addEventListener('click', () => {
-        console.log('click');
-        console.log(col);
         showOverlay(col.src, col.alt)
       })
     })
@@ -41,7 +38,6 @@ axios.get(api)
       if (!grid) {
         grid = document.createElement('div')
         grid.id = 'grid'
-        console.log(grid);
         document.body.appendChild(grid)
       }
 

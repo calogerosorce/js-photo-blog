@@ -177,7 +177,6 @@ main {
 #close-btn {
     position: fixed;
     top: 20px;
-    right: 20px;
     z-index: 10001;
     background: white;
     border: none;
