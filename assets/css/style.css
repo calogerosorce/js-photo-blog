@@ -114,7 +114,7 @@ main {
         font-family: "Sometype Mono", monospace;
     }
 
-    .img_estate {
+    #img_estate {
         width: 90%;
         padding-bottom: 15px;
     }

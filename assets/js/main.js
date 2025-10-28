@@ -3,7 +3,7 @@ const rowEl = document.getElementById('row')
 axios.get(api)
   .then(res => {
     const dat = res.data
-    const { url, date, title } = res
+    const { url, date, title, id } = res
 
 
 
@@ -15,11 +15,7 @@ axios.get(api)
           <div id="card">
             <div class="viaggio"> 
               <img class="pin" src="./assets/img/pin.svg" alt="">
-              <img class="img_estate" data-img="${id}" src="${url}" alt="${title}">
-              <div id="grid">
-                 <img class="img_estesa" data-img="${id}" src="${url}" alt="${title}">
-                  <button id="close-btn">Chiudi</button>
-              </div>
+              <img id="img_estate" data-img="${id}" src="${url}" alt="${title}">
             </div>
             <div class="paragraph"> 
               <p class="gray">${date}</p>
@@ -29,17 +25,23 @@ axios.get(api)
         </div>
       `})
 
-    const nameClass = 'card'
-    const cardEl = document.querySelectorAll(`#${nameClass}`)
-    console.log(cardEl);
-    cardEl.forEach(col => {
+    const nameClass = 'img_estate'
+    const imgEl = document.querySelectorAll(`#${nameClass}`)
+    console.log(imgEl);
+    imgEl.forEach(col => {
       col.addEventListener('click', function () {
         console.log('click');
+        console.log(col);
       })
     })
 
+    function showOverlay(src, alt) {
+      let grid = document.getElementById('grid')
+      if (!grid) {
+        grid = document.createElement('div')
+        grid.id = 'grid'
+        document.body.appendChild(grid)
+      }
+    }
 
   })
-
-
-
